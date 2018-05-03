@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="referrer" content="never">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="豆瓣电影,jQuery">
+  <title>豆瓣电影</title>
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_650721_goowslatuw9ltyb9.css">
+</head>
+<body>
+  <div class="page">
+    <main>
+      <section class="top250 active">
+        <ul class="top250-list movies"></ul>
+        <div class="loading">
+          加载中... 
+        </div>
+      </section>
+      <section class="us movies">
+        <ul class="us-movie-list"></ul>
+        <div class="loading">
+          加载中... 
+        </div>
+      </section>
+      <section class="search">
+        <div class="search-input">
+          <input type="text" placeholder="请输入电影名,导演..." autofocus autocomplete="off" name="" id="">
+          <button class="search-btn">搜索</button>
+        </div>
+        <div class="loading">
+          加载中... 
+        </div>
+        <ul class="search-list movies"></ul>
+      </section>
+    </main>
+    <footer>
+      <div id="tab-top250" class="active">
+        <i class="iconfont icon-rank"></i>
+        <span class="tab-name">Top250</span>
+      </div>
+      <div id="tab-new">
+        <i class="iconfont icon-us"></i>
+        <span class="tab-name">北美影片</span>
+      </div>
+      <div id="tab-search">
+        <i class="iconfont icon-search"></i>
+        <span class="tab-name">搜索</span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
