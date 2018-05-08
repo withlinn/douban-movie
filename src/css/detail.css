@@ -1,0 +1,58 @@
+/* css reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 5%;
+  font-size: 12px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+.page>div {
+  margin-bottom: 20px;
+}
+
+.filmers {
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+.filmers li {
+  display: inline-block;
+  width: 33.3333%;
+  text-align: center;
+}
+
+.filmers img {
+  width: 100%;
+  height: 150px;
+}
+
+.filmer li p{
+  font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.summary.part{
+  -webkit-line-clamp:3;
+}
+.summary{
+	display: -webkit-box;
+	-webkit-box-orient:vertical;
+	overflow: hidden;
+}

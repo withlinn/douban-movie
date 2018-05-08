@@ -5,7 +5,8 @@ module.exports = {
   mode: 'development',
   devtool: 'eval-source-map',
   entry:{
-    index: './src/js/index.js'
+    index: './src/js/index.js',
+    detail: './src/js/detail.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -41,7 +42,18 @@ module.exports = {
       minify:{
         removeComments: true,
         minifyCSS: true,
-      }
+      },
+      chunks:['index']
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'detail.html',
+      template: './src/detail.html',
+      favicon: './src/favicon.ico',
+      minify:{
+        removeComments: true,
+        minifyCSS: true
+      },
+      chunks:['detail']
     }),
     new ExtractTextPlugin("css/[name].css")
   ]
